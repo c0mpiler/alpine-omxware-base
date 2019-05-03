@@ -38,18 +38,21 @@ RUN apk add --no-cache \
       g++ \
       make \
       python3-dev \
+      py3-qt5 \
       perl
+
+  RUN apk update && apk upgrade \
+        && apk add --no-cache ${REQUIRE}
 
   USER root
 	RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
 
   RUN python3 -m pip --no-cache-dir install pip -U
+  RUN python3 -m pip --no-cache-dir install pandas matplotlib setuptools pyOpenSSL
   # RUN python3 -m pip --no-cache-dir install numpy
   # RUN python3 -m pip --no-cache-dir install scipy
-  RUN python3 -m pip --no-cache-dir install pandas
-  RUN python3 -m pip --no-cache-dir install matplotlib
   # RUN python3 -m pip --no-cache-dir install seaborn
-  RUN python3 -m pip --no-cache-dir install omxware
+  RUN python3 -m pip install omxware
 
   RUN rm -rf /tmp/build
   RUN rm -rf /var/cache/apk/*
