@@ -1,1 +1,1 @@
-# docker-alpine-omxware-base
+# alpine-omxware-base
