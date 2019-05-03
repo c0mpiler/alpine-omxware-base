@@ -1,4 +1,4 @@
-FROM python:3.7.3-alpine3.9
+FROM python:3-alpine
 MAINTAINER Harsha Krishnareddy <c0mpiler@outlook.com>
 
 ARG REQUIRE="sudo build-base"
