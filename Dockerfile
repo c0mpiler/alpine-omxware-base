@@ -48,7 +48,7 @@ RUN apk add --no-cache \
 	RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
 
   RUN python3 -m pip --no-cache-dir install pip -U
-  RUN python3 -m pip --no-cache-dir install pandas matplotlib setuptools pyOpenSSL
+  RUN python3 -m pip --no-cache-dir install pandas matplotlib
   # RUN python3 -m pip --no-cache-dir install numpy
   # RUN python3 -m pip --no-cache-dir install scipy
   # RUN python3 -m pip --no-cache-dir install seaborn
