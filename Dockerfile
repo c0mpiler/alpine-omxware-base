@@ -56,5 +56,4 @@ RUN apk add --no-cache \
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN ln -s usr/local/bin/docker-entrypoint.sh / # backwards compat
 
-ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["/bin/ash"]
+RUN /docker-entrypoint.sh
