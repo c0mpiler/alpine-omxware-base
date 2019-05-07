@@ -10,7 +10,6 @@ RUN apk add --no-cache \
 			build-base \
 			gfortran \
       tar \
-
 			libffi-dev \
 			ca-certificates \
       curl \
