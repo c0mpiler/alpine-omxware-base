@@ -38,11 +38,7 @@ RUN apk add --no-cache \
       g++ \
       make \
       python3-dev \
-      py3-qt5 \
-      perl
-
-  RUN apk update && apk upgrade \
-        && apk add --no-cache ${REQUIRE}
+      py3-qt5
 
   USER root
 	RUN ln -s /usr/include/locale.h /usr/include/xlocale.h
