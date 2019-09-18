@@ -4,10 +4,6 @@ OMXware
 
 |
 
-Use with Docker
-***************
-
-
 In an effort to make it easier for users and developers to get started with OMXWare, We have a 2 base docker images with ``python`` and OMXWare pre-installed. It also comes with a bunch of python libs like ``matplotlib``, ``numpy`` along with some others.
 
  **1)  Minimal:** ``docker pull c0mpiler/alpine-omxware-base:latest``
